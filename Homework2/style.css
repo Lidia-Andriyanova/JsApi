@@ -1,0 +1,59 @@
+.slider {
+    margin: 0 auto;
+    position: relative;
+    max-width: 800px;
+    overflow: hidden; 
+}
+
+.slider-content {
+    display: flex;
+    align-items: center;
+    transform: all 1s;
+}
+
+.slider-img{
+   max-width: 800px;  
+   height: 100%;
+}
+
+.slider-left, .slider-right {
+    position: absolute;
+    top: 47%;
+    color: silver;
+    font-size: 40px;
+}
+
+.slider-left {
+    left: 5%;
+}
+
+.slider-right {
+    right: 5%;
+}
+
+.slider-left:hover, .slider-rigth:hover {
+    color: yellow;
+}
+
+.pages {
+    display: flex;
+    column-gap: 10px;
+    position: absolute;
+    bottom: 7%;
+    left: 44%;
+}
+
+.page {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.page:hover {
+    background-color: yellow;
+}
+
+.active-page {
+    background-color: yellow;
+}
